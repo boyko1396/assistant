@@ -33,10 +33,11 @@
   }
   &__content {
     max-width: 584rem;
-    margin: 0 auto;
+    margin: 0 auto 40rem;
     text-align: center;
     @media (max-width: $sm) {
       max-width: 100%;
+      margin-bottom: 24rem;
       text-align: left;
       order: -2;
     }
@@ -49,6 +50,17 @@
   }
   &__title {
     margin: 0 0 12rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.--mw-md {
+      margin-right: -220rem;
+      margin-left: -220rem;
+      @media (max-width: $md) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
   }
   &__text {
     margin: 0 0 40rem;
@@ -61,8 +73,8 @@
   &__list {
     margin-bottom: var(--gap-fluid);
     @media (max-width: $sm) {
-      margin: 0 -16rem;
-      padding: 0 10rem;
+      margin: 0 -16rem -60rem;
+      padding: 0 10rem 60rem;
       flex-wrap: nowrap;
       overflow-x: auto;
     }

@@ -1,5 +1,5 @@
 .im-tools {
-  background: $whiteColor;
+  background: #F9F9F9;
   padding: var(--section-y) 0;
   position: relative;
   overflow: hidden;
@@ -23,6 +23,16 @@
     color: $greyDescColor;
     @media (max-width: $sm) {
       margin-bottom: 24rem;
+    }
+    &.--mx {
+      &-lg {
+        margin-right: -20rem;
+        margin-left: -20rem;
+        @media (max-width: $sm) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
     }
   }
   &__list {

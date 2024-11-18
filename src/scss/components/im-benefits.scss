@@ -159,7 +159,7 @@
     margin: 0 0 var(--gap-fluid);
     backdrop-filter: blur(10px);
     border-radius: $radiusExs;
-    box-shadow: 0 5px 20px rgba($blackColor, .1);
+    box-shadow: inset 0 0 0 1px #E7E7E7, 0 5px 20px rgba($blackColor, .1);
     &-title {
       max-width: 540rem;
       margin: 0 auto;

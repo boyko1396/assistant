@@ -68,6 +68,14 @@
           margin-left: 0;
         }
       }
+      &-xl {
+        margin-right: -110rem;
+        margin-left: -110rem;
+        @media (max-width: $sm) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
     }
   }
   &__list {

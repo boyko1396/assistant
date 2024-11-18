@@ -1,0 +1,69 @@
+.im-collage-benefits {
+  background: #F9F9F9;
+  padding: var(--section-y) 0;
+  position: relative;
+  overflow: hidden;
+  &__container {
+  }
+  &__content {
+    max-width: 818rem;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: $sm) {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+  &__title {
+    margin: 0 0 12rem;
+  }
+  &__text {
+    margin: 0 0 40rem;
+    line-height: $lineHeight8;
+    color: $greyDescColor;
+    @media (max-width: $sm) {
+      margin: 0 0 24rem;
+    }
+  }
+  &__list {
+    margin: 0 0 36rem;
+    &-card {
+      & + & {
+        margin-top: 36rem;
+      }
+      &:nth-child(even) {
+        .im-collage-card__row {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+  &__step {
+    margin-bottom: var(--gap-fluid-);
+    counter-reset: collageListCounter;
+    &-title {
+      margin: 0 0 24rem;
+    }
+    &-col {
+      margin-bottom: var(--gap-fluid);
+      counter-increment: collageListCounter;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+  &__footer {
+    margin-top: 40rem;
+    display: flex;
+    justify-content: center;
+    @media (max-width: $sm) {
+      margin-top: 24rem;
+    }
+    &-btn {
+    }
+  }
+}
