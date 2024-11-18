@@ -86,11 +86,11 @@
       <main role="main" class="site__main">
 
         <section id="intro" class="im-intro">
-          <picture class="d-lg-none im-intro__bg">
+          <picture class="im-intro__bg">
 
             <source srcset="images/intro-bg-767.png" media="(max-width: 767px)">
 
-            <img src="images/intro-bg.png" width="1936" height="789"></picture>
+            <img src="images/intro-bg.png" alt="Assistant AI - Создавайте уникальные фото с Assistant AI" width="1936" height="789"></picture>
           <div class="container container--size-md im-intro__container">
             <div class="im-intro__inner">
               <div class="im-intro__content">
@@ -102,11 +102,6 @@
                     Креативность без границ. Профессиональные результаты за мгновение. Воплощайте в жизнь любые творческие задумки
                   </p>
                 </div>
-                <picture class="im-intro__hero d-sm-block">
-
-                  <source srcset="images/intro-hero-767.png, images/intro-hero-767@2x.png 2x" media="(max-width: 767px)">
-
-                  <img src="images/intro-hero.jpg" alt="Assistant AI - Создавайте уникальные фото с Assistant AI" width="1132" height="465"></picture>
                 <div class="btn-group im-intro__btn-group">
                   <div class="btn-group__inner">
                     <div class="btn-group__col">
@@ -125,11 +120,11 @@
                 </div>
               </div>
               <div class="im-intro__media">
-                <picture class="im-intro__hero d-sm-none">
+                <picture class="im-intro__hero">
 
-                  <source srcset="images/intro-hero-767.png, images/intro-hero-767@2x.png 2x" media="(max-width: 767px)">
+                  <source srcset="images/intro-hero-767.jpg, images/intro-hero-767@2x.jpg 2x" media="(max-width: 767px)">
 
-                  <img src="images/intro-hero.jpg" alt="Assistant AI - Создавайте уникальные фото с Assistant AI" width="1132" height="465"></picture>
+                  <img src="images/intro-hero.jpg" srcset="images/intro-hero.jpg, images/intro-hero@2x.jpg 2x" width="1132" height="465"></picture>
               </div>
             </div>
           </div>
@@ -147,7 +142,7 @@
             </div>
             <div class="row im-possibilities__grid">
               <div class="im-possibilities__grid-col row__col--6">
-                <div class="u-content im-possibilities__grid-appeal d-md-none">
+                <div class="u-content im-possibilities__grid-appeal">
                   <p>
                     Надоели скучные фото? Вдохните жизнь в новые проекты! Нейросеть создаст уникальные изображения, которые&nbsp;никого не оставят равнодушным
                   </p>
@@ -163,53 +158,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-md-block im-possibilities__grid-resolution">
-                  <div class="im-possibilities__grid-resolution-variant">
-                    <div class="im-possibilities__grid-resolution-card resolution-card is-active">
-                      <picture class="resolution-card__picture">
-                        <img src="images/resolution-card-1.svg" alt="1:1"></picture>
-                      <div class="resolution-card__content">
-                        <p class="resolution-card__title">1:1</p>
-                      </div>
-                    </div>
-                    <div class="im-possibilities__grid-resolution-card resolution-card">
-                      <picture class="resolution-card__picture">
-                        <img src="images/resolution-card-2.svg" alt="3:4"></picture>
-                      <div class="resolution-card__content">
-                        <p class="resolution-card__title">3:4</p>
-                      </div>
-                    </div>
-                    <div class="im-possibilities__grid-resolution-card resolution-card">
-                      <picture class="resolution-card__picture">
-                        <img src="images/resolution-card-3.svg" alt="4:3"></picture>
-                      <div class="resolution-card__content">
-                        <p class="resolution-card__title">4:3</p>
-                      </div>
-                    </div>
-                    <div class="im-possibilities__grid-resolution-card resolution-card">
-                      <picture class="resolution-card__picture">
-                        <img src="images/resolution-card-4.svg" alt="9:16"></picture>
-                      <div class="resolution-card__content">
-                        <p class="resolution-card__title">9:16</p>
-                      </div>
-                    </div>
-                    <div class="im-possibilities__grid-resolution-card resolution-card">
-                      <picture class="resolution-card__picture">
-                        <img src="images/resolution-card-5.svg" alt="16:9"></picture>
-                      <div class="resolution-card__content">
-                        <p class="resolution-card__title">16:9</p>
-                      </div>
-                    </div>
-                  </div>
-                  <h3 class="fs-4 im-possibilities__grid-resolution-title">Поддержка разных форматов</h3>
-                </div>
               </div>
               <div class="im-possibilities__grid-col row__col--6">
-                <div class="u-content im-possibilities__grid-appeal d-md-block">
-                  <p>
-                    Надоели скучные фото? Вдохните жизнь в новые проекты! Нейросеть создаст уникальные изображения, которые&nbsp;никого не оставят равнодушным
-                  </p>
-                </div>
                 <div class="swiper im-possibilities__grid-photo-slider js-photo-slider-init photo-slider">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -243,12 +193,16 @@
                   <div class="im-possibilities__grid-photo-slider-content">
                     <h3 class="fs-4 im-possibilities__grid-photo-slider-title">Настройка стиля и цвета фото</h3>
                     <div class="im-possibilities__grid-photo-slider-pagination">
-                      <div class="im-possibilities__grid-photo-slider-pagination-list js-swiper-photo-slider-pagination swiper-pagination"></div>
+                      <div class="im-possibilities__grid-photo-slider-pagination-list js-swiper-photo-slider-pagination swiper-pagination">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                      </div>
                       <p class="im-possibilities__grid-photo-slider-pagination-moore">5+</p>
                     </div>
                   </div>
                 </div>
-                <div class="d-md-none im-possibilities__grid-resolution">
+                <div class="im-possibilities__grid-resolution">
                   <div class="im-possibilities__grid-resolution-variant">
                     <div class="im-possibilities__grid-resolution-card resolution-card is-active">
                       <picture class="resolution-card__picture">
@@ -313,7 +267,7 @@
               <h2 class="im-features__title">Почему выбирают Assistant&nbsp;AI?</h2>
               <div class="u-content im-features__text">
                 <p>
-                  Assistant&nbsp;AI предлагает уникальные возможности для создания фото, которые&nbsp;помогут добиться профессиональных&nbsp;результатов
+                  Assistant&nbsp;AI предлагает уникальные возможности для создания фото, которые помогут добиться профессиональных результатов
                 </p>
               </div>
             </div>
@@ -323,7 +277,7 @@
                   <h3 class="fs-4 im-features-card__title">Легкость использования и&nbsp;понятный интерфейс</h3>
                   <div class="u-content im-features-card__text">
                     <p>
-                      Создавайте изображения за&nbsp;считанные секунды, даже если вы никогда не работали с&nbsp;графическими редакторами. Всё максимально понятно и интуитивно
+                      Создавайте изображения за считанные секунды, даже если вы никогда не работали с графическими редакторами. Всё максимально понятно и интуитивно
                     </p>
                   </div>
                 </article>
@@ -343,7 +297,7 @@
                   <h3 class="fs-4 im-features-card__title">Быстрое создание фото с&nbsp;впечатляющим качеством</h3>
                   <div class="u-content im-features-card__text">
                     <p>
-                      Не нужно ждать! Каждое фото создаётся с&nbsp;максимальной детализацией и&nbsp;чёткостью, чтобы получать именно&nbsp;то, что нужно
+                      Не нужно ждать! Каждое фото создаётся с максимальной детализацией и&nbsp;чёткостью, чтобы получать именно&nbsp;то, что нужно
                     </p>
                   </div>
                 </article>
@@ -363,7 +317,7 @@
               <h2 class="im-tools__title">Другие инструменты для фото</h2>
               <div class="u-content im-tools__text">
                 <p>
-                  Assistant&nbsp;AI предлагает множество инструментов, которые&nbsp;позволят работать с&nbsp;изображениями легко и&nbsp;эффективно
+                  Assistant&nbsp;AI предлагает множество инструментов, которые&nbsp;позволят работать с изображениями легко и эффективно
                 </p>
               </div>
             </div>
@@ -567,8 +521,8 @@
             <div class="im-audiences__content">
               <h2 class="im-audiences__title">
                 <span class="color-accent">Assistant&nbsp;AI</span>
-                — для тех,
-                <br>кто ценит креативность</h2>
+                — для всех, кто&nbsp;ценит креативность
+              </h2>
               <div class="u-content im-audiences__text">
                 <p>
                   Фотографы, дизайнеры, художники и просто любители — вы найдёте здесь всё, что нужно для создания ярких визуальных решений
@@ -660,13 +614,13 @@
           </div>
         </section>
 
-        <section id="reviews" class="--bsh-black im-reviews">
+        <section id="reviews" class="im-reviews">
           <div class="container container--size-md im-reviews__container">
             <div class="im-reviews__content">
               <h2 class="im-reviews__title">Пользователи выбирают нас</h2>
               <div class="u-content im-reviews__text">
                 <p>
-                  Сотни пользователей по всему миру доверяют Assistant&nbsp;AI для создания своих лучших работ. Присоединяйтесь к&nbsp;нам и&nbsp;убедитесь в&nbsp;этом сами!
+                  Сотни пользователей по всему миру доверяют Assistant&nbsp;AI для создания своих лучших работ. Присоединяйтесь к нам и убедитесь в этом сами!
                 </p>
               </div>
             </div>
@@ -685,7 +639,7 @@
                       <div class="im-reviews-card__header">
                         <div class="im-reviews-card__user">
                           <h3 class="fs-4 im-reviews-card__title">Алексей</h3>
-                          <p class="im-reviews-card__position">Маркетолог</p>
+                          <p class="im-reviews-card__position">маркетолог</p>
                         </div>
                         <div class="im-reviews-card__info">
                           <div class="im-reviews-card__rating u-rating" style="--rating-progress: 5"></div>
@@ -706,7 +660,7 @@
                       <div class="im-reviews-card__header">
                         <div class="im-reviews-card__user">
                           <h3 class="fs-4 im-reviews-card__title">Алексей</h3>
-                          <p class="im-reviews-card__position">Маркетолог</p>
+                          <p class="im-reviews-card__position">маркетолог</p>
                         </div>
                         <div class="im-reviews-card__info">
                           <div class="im-reviews-card__rating u-rating" style="--rating-progress: 5"></div>
@@ -727,7 +681,7 @@
                       <div class="im-reviews-card__header">
                         <div class="im-reviews-card__user">
                           <h3 class="fs-4 im-reviews-card__title">Алексей</h3>
-                          <p class="im-reviews-card__position">Маркетолог</p>
+                          <p class="im-reviews-card__position">маркетолог</p>
                         </div>
                         <div class="im-reviews-card__info">
                           <div class="im-reviews-card__rating u-rating" style="--rating-progress: 5"></div>
@@ -748,7 +702,7 @@
                       <div class="im-reviews-card__header">
                         <div class="im-reviews-card__user">
                           <h3 class="fs-4 im-reviews-card__title">Алексей</h3>
-                          <p class="im-reviews-card__position">Маркетолог</p>
+                          <p class="im-reviews-card__position">маркетолог</p>
                         </div>
                         <div class="im-reviews-card__info">
                           <div class="im-reviews-card__rating u-rating" style="--rating-progress: 5"></div>
@@ -769,7 +723,7 @@
                       <div class="im-reviews-card__header">
                         <div class="im-reviews-card__user">
                           <h3 class="fs-4 im-reviews-card__title">Алексей</h3>
-                          <p class="im-reviews-card__position">Маркетолог</p>
+                          <p class="im-reviews-card__position">маркетолог</p>
                         </div>
                         <div class="im-reviews-card__info">
                           <div class="im-reviews-card__rating u-rating" style="--rating-progress: 5"></div>
@@ -790,7 +744,7 @@
                       <div class="im-reviews-card__header">
                         <div class="im-reviews-card__user">
                           <h3 class="fs-4 im-reviews-card__title">Алексей</h3>
-                          <p class="im-reviews-card__position">Маркетолог</p>
+                          <p class="im-reviews-card__position">маркетолог</p>
                         </div>
                         <div class="im-reviews-card__info">
                           <div class="im-reviews-card__rating u-rating" style="--rating-progress: 5"></div>
@@ -811,7 +765,7 @@
                       <div class="im-reviews-card__header">
                         <div class="im-reviews-card__user">
                           <h3 class="fs-4 im-reviews-card__title">Алексей</h3>
-                          <p class="im-reviews-card__position">Маркетолог</p>
+                          <p class="im-reviews-card__position">маркетолог</p>
                         </div>
                         <div class="im-reviews-card__info">
                           <div class="im-reviews-card__rating u-rating" style="--rating-progress: 5"></div>
@@ -832,7 +786,7 @@
                       <div class="im-reviews-card__header">
                         <div class="im-reviews-card__user">
                           <h3 class="fs-4 im-reviews-card__title">Алексей</h3>
-                          <p class="im-reviews-card__position">Маркетолог</p>
+                          <p class="im-reviews-card__position">маркетолог</p>
                         </div>
                         <div class="im-reviews-card__info">
                           <div class="im-reviews-card__rating u-rating" style="--rating-progress: 5"></div>

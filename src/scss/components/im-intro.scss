@@ -31,6 +31,17 @@
     backdrop-filter: blur(10px);
     border-radius: $radiusSm;
     box-shadow: 0 10px 40px rgba($blackColor, .1);
+    @media (max-width: $sm) {
+      margin-top: 12rem;
+      padding: 24rem 12rem;
+      border-radius: 12rem;
+    }
+    &-btn-group {
+      @media (max-width: $sm) {
+        display: flex;
+        justify-content: center;
+      }
+    }
     &-row {
       justify-content: space-between;
       align-items: center;
@@ -43,6 +54,16 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      @media (max-width: $lg) {
+        margin-left: 24rem;
+      }
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        flex: 0 0 100%;
+      }
       .u-content {
       }
     }
@@ -50,31 +71,50 @@
       margin-right: $col;
       position: relative;
       z-index: 0;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin-right: 0;
+        flex: 0 0 100%;
+      }
       &:before {
-        background: $accentColor;
-        filter: blur(20px);
-        width: 380rem;
-        height: 380rem;
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        border-radius: 50%;
-        opacity: .7;
-        transform: translate(-50%, -50%);
-        z-index: -1;
+        @media (min-width: $sm-mf) {
+          background: $accentColor;
+          filter: blur(20px);
+          width: 280rem;
+          height: 280rem;
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          border-radius: 50%;
+          opacity: .7;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+        @media (min-width: $md-mf) {
+          width: 380rem;
+          height: 380rem;
+        }
       }
     }
     &-video {
       max-width: 240rem;
       margin: -24rem auto;
       position: relative;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin: 0 0 24rem;
+        padding: 0 0 86.8421052632%;
+      }
       &-mask {
         @extend %img-contain;
         padding: 0 0 200%;
         user-select: none;
         pointer-events: none;
         overflow: hidden;
+        @media (max-width: $sm) {
+          display: none;
+        }
       }
       &-el {
         width: calc(100% - 12rem);
@@ -86,17 +126,37 @@
         border-radius: 30rem;
         object-fit: cover;
         z-index: -1;
+        @media (max-width: $sm) {
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          border-radius: 24rem;
+        }
       }
     }
   }
   &__services-bg {
-    margin: 20rem 0 var(--section-y);
+    margin: 0 0 var(--section-y);
+    @media (max-width: $lg) {
+    }
+    @media (max-width: $sm) {
+    }
     &-row {
       justify-content: space-between;
     }
     &-col-content,
     &-col-media {
       display: flex;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-col-media {
+      @media (max-width: $sm) {
+        order: -1;
+      }
     }
     &-content,
     &-media {
@@ -115,17 +175,35 @@
       justify-content: center;
       align-items: flex-start;
       text-align: left;
+      @media (max-width: $lg) {
+        padding: 36rem 24rem;
+      }
+      @media (max-width: $sm) {
+        padding: 24rem 12rem;
+      }
     }
     &-media {
+      @media (max-width: $sm) {
+        margin-bottom: var(--gap-fluid);
+      }
     }
     &-video {
       height: 100%;
       position: relative;
+      @media (max-width: $sm) {
+        height: initial;
+        padding: 0 0 131.707317073%;
+      }
       &-el {
         width: 100%;
         height: 100%;
         display: block;
         object-fit: cover;
+        @media (max-width: $sm) {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
       }
     }
   }
@@ -161,13 +239,14 @@
     line-height: $lineHeight8;
     color: $greyDescColor;
     @media (max-width: $sm) {
-      margin-bottom: 30rem;
+      margin-bottom: 24rem;
     }
   }
   &__btn-group {
     margin: 0 0 68rem;
     display: inline-flex;
     @media (max-width: $sm) {
+      width: 100%;
       margin: 0;
       display: flex;
       justify-content: center;

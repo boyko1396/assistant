@@ -37,16 +37,31 @@
       margin-bottom: var(--gap-fluid);
       display: flex;
       flex-direction: column;
-      @media (max-width: $md) {
-        max-width: 100%;
-        display: block;
-        flex-basis: 100%;
-      }
-      &:nth-child(2) {
+      &.row__col--6 {
         @media (max-width: $md) {
-          order: -1;
+          max-width: 100%;
+          display: block;
+          flex-basis: 100%;
+        }
+        &:nth-child(2) {
+          @media (max-width: $md) {
+            order: -1;
+          }
         }
       }
+      &.row__col--4 {
+        @media (max-width: $md) {
+          max-width: 50%;
+          flex-basis: 50%;
+        }
+        @media (max-width: $sm) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
+    &-card-benefits {
+      height: 100%;
     }
     &-appeal {
       background: #F0F6FC;
