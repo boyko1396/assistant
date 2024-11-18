@@ -64,7 +64,76 @@
     margin-top: 40rem;
     display: flex;
     justify-content: center;
+    @media (max-width: $sm) {
+      margin-top: 24rem;
+    }
     &-btn {
+    }
+  }
+  &__improve {
+    &-row {
+      @media (max-width: $md) {
+      }
+    }
+    &-col {
+      &--list {
+        @media (max-width: $md) {
+          flex-grow: 1;
+          max-width: initial;
+          margin: var(--gap-fluid) -10rem -40rem;
+          padding: 0 16rem 40rem;
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+        }
+      }
+      &--hero {
+        @media (max-width: $md) {
+          max-width: 100%;
+          flex-basis: 100%;
+          order: -1;
+        }
+      }
+    }
+    &-card {
+      border: none;
+      flex-shrink: 0;
+      @media (max-width: $md) {
+        width: 280rem;
+      }
+      & + & {
+        margin-top: var(--gap-fluid);
+        @media (max-width: $md) {
+          margin-top: 0;
+          margin-left: var(--gap-fluid);
+        }
+      }
+      .u-content {
+      }
+    }
+    &-media {
+      background: $whiteColor;
+      height: 100%;
+      padding: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: $radiusExs;
+      border: none;
+      box-shadow: $boxShadowBLack2;
+      @media (max-width: $md) {
+        padding: 12rem;
+      }
+    }
+    &-hero {
+      border: 1px solid rgba($greyDescColor, .25);
+      border-radius: $radiusExs;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
     }
   }
 }

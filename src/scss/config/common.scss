@@ -1014,10 +1014,49 @@
   }
   &__title {
     margin: 0 0 12rem;
+    @media (max-width: $sm) {
+      margin-bottom: 8rem;
+    }
   }
   &__text {
     margin: 0;
     font-weight: normal !important;
+    line-height: $lineHeight1;
+    color: $greyDescColor;
+  }
+}
+
+.im-improve-card {
+  &__media {
+    margin: 0 0 24rem;
+    padding: 0 0 63.1578947368%;
+    border-radius: 12rem;
+    border: none;
+    box-shadow: 0 5px 20px rgba($blackColor, .1);
+    overflow: hidden;
+    @media (max-width: $sm) {
+      margin-bottom: 16rem;
+    }
+    &-video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    text-align: center;
+    @media (max-width: $sm) {
+      text-align: left;
+    }
+  }
+  &__title {
+    margin: 0 0 4rem;
+  }
+  &__text {
+    font-weight: normal;
     line-height: $lineHeight1;
     color: $greyDescColor;
   }
