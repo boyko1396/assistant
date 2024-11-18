@@ -28,6 +28,14 @@
       max-width: 100%;
       text-align: left;
     }
+    &.--mw {
+      &-md {
+        max-width: 584rem;
+        @media (max-width: $xs) {
+          max-width: 100%;
+        }
+      }
+    }
   }
   &__title {
     margin: 0 0 12rem;
@@ -38,6 +46,16 @@
     color: $greyDescColor;
     @media (max-width: $sm) {
       margin: 0 0 24rem;
+    }
+    &.--mw {
+      &-md {
+        margin-right: 30rem;
+        margin-left: 30rem;
+        @media (max-width: $xs) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
     }
   }
   &__list {

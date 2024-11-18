@@ -996,7 +996,8 @@
 }
 
 .im-benefits-card {
-  background: $whiteColor;
+  background: linear-gradient(97.84deg, rgba($whiteColor, .55) 0%, rgba($whiteColor, .2) 100%);
+  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   padding: var(--gap-fluid);
@@ -1009,7 +1010,13 @@
     height: 80rem;
     margin: 0 0 36rem;
     @media (max-width: $sm) {
-      margin: 0 0 var(--gap-fluid);
+      margin: 0 0 24rem;
+    }
+    &.--size {
+      &-sm {
+        width: 48rem;
+        height: 48rem;
+      }
     }
   }
   &__title {
@@ -1056,6 +1063,9 @@
     margin: 0 0 4rem;
   }
   &__text {
+    @media (max-width: $sm) {
+      margin-bottom: 12rem;
+    }
     font-weight: normal;
     line-height: $lineHeight1;
     color: $greyDescColor;
@@ -1064,7 +1074,6 @@
 
 .im-face-card {
   background: linear-gradient(97.84deg, rgba($whiteColor, .55) 0%, rgba($whiteColor, .2) 100%);
-  box-shadow: $boxShadowBLack2;
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
@@ -1113,5 +1122,42 @@
     top: 0;
     left: 0;
     object-fit: cover;
+  }
+}
+
+.possibilities-card {
+  background: linear-gradient(97.84deg, rgba($whiteColor, .55) 0%, rgba($whiteColor, .2) 100%);
+  backdrop-filter: blur(10px);
+  padding: 24rem;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 0 5px 20px rgba($blackColor, .1);
+  @media (max-width: $sm) {
+    padding-right: var(--gap-fluid);
+    padding-left: var(--gap-fluid);
+  }
+  &__picture {
+    max-width: 332rem;
+    margin: 0 auto 36rem;
+    position: relative;
+    @media (max-width: $sm) {
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__content {
+    @media (max-width: $sm) {
+    }
+  }
+  &__title {
+    margin: 0 0 4rem;
+  }
+  &__text {
+    font-weight: normal;
+    line-height: $lineHeight1;
+    color: $greyDescColor;
   }
 }

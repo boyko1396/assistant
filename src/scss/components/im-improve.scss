@@ -60,16 +60,17 @@
     @media (max-width: $sm) {
     }
     &-row {
-      margin-bottom: -24rem;
+      margin-bottom: var(--gap-fluid-);
     }
     &-col {
-      margin-bottom: 24rem;
+      margin-bottom: var(--gap-fluid);
       @media (max-width: $sm) {
         max-width: 100%;
         flex-basis: 100%;
       }
     }
     &-card {
+      height: 100%;
       @media (max-width: $sm) {
       }
     }

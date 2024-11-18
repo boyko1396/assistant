@@ -4,20 +4,26 @@
   color: $whiteColor;
   position: relative;
   overflow: hidden;
+  z-index: 0;
   &__bg {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    user-select: none;
-    z-index: -1;
+    display: none;
+    @media (min-width: $lg-mf) {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      user-select: none;
+      z-index: -1;
+    }
     img {
-      width: 1920rem;
-      height: auto;
-      display: block;
+      @media (min-width: $lg-mf) {
+        width: 1920rem;
+        height: auto;
+        display: block;
+      }
     }
   }
   &__container {
