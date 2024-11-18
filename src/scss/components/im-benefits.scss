@@ -1,0 +1,50 @@
+.im-benefits {
+  padding: var(--section-y) 0;
+  position: relative;
+  overflow: hidden;
+  &__bg {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    img {
+      width: 1920rem;
+      height: auto;
+      display: block;
+    }
+  }
+  &__container {
+  }
+  &__content {
+    max-width: 554rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    margin: 0 0 12rem;
+  }
+  &__text {
+    margin: 0 -20rem 40rem;
+    line-height: $lineHeight8;
+    color: $greyDescColor;
+  }
+  &__list {
+    &-col {
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+  &__footer {
+    margin-top: 40rem;
+    display: flex;
+    justify-content: center;
+    &-btn {
+    }
+  }
+}

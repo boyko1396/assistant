@@ -1,0 +1,46 @@
+.im-aspects {
+  background: $whiteColor;
+  padding: var(--section-y) 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  &__bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    img {
+      width: 100%;
+      min-width: 1844rem;
+      height: auto;
+      display: block;
+    }
+  }
+  &__container {
+  }
+  &__content {
+    max-width: 620rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    margin: 0 0 12rem;
+  }
+  &__text {
+    margin: 0 -50rem 40rem;
+    line-height: $lineHeight8;
+    color: $greyDescColor;
+  }
+  &__list {
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: var(--gap-fluid);
+      }
+    }
+  }
+}

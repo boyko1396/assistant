@@ -1,0 +1,128 @@
+$siteResolution: 1px;
+$mainFont: 'SF Pro Text';
+$mainWeight: 400;
+$lineHeight1: 1.5;
+$lineHeight2: 1.25;
+$lineHeight3: 1.2;
+$lineHeight4: 1;
+$lineHeight5: 1.1;
+$lineHeight6: 1.3;
+$lineHeight7: 1.4;
+$lineHeight8: 1.375;
+$lineHeight9: 1.175;
+$lineHeight10: 1.1875;
+$lineHeight11: 1.175;
+$lineHeight12: 1.175;
+$lineHeightDefault: $lineHeight8;
+
+$containerWidthMd: 1220rem;
+
+$gapXs: 6rem;
+$gap: 12rem;
+$gapFluid: 24rem;
+
+$radiusExs: 12rem;
+$radiusXs: 20rem;
+$radiusSm: 24rem;
+$radiusMd: 40rem;
+
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$darkColor: #313131;
+$blueColor: #0057ff;
+$darkGreyColor: #626262;
+$lightGreyColor: #f9f9f9;
+$greyColor: #ababab;
+$greyMediumColor: #D9D9D9;
+$greySurfaceColor: #F3F3F3;
+$greyDescColor: #939393;
+$greyLightColor: #F2F2F2;
+$greyMediumColor: #D9D9D9;
+$greyMediumColor: #D9D9D9;
+$greyMediumColor: #D9D9D9;
+$redColor: #f02121;
+$accentColor: $blueColor;
+
+$bgSite: $greyLightColor;
+
+$boxShadowBLack1: 0 5px 20px rgba($blackColor, .2);
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $blackColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+$xxs: 480px;
+$xxs-mf: $xs + 1;
+
+$col: 8.333333333%;
+
+:root {
+  --fs-default: 16rem;
+  --fs-1: 40rem;
+  --fs-2: 32rem;
+  --fs-3: 24rem;
+  --fs-4: 20rem;
+  --fs-5: 18rem;
+  --fs-6: 16rem;
+  --fs-7: 15rem;
+  --fs-8: 14rem;
+  --fs-9: 12rem;
+  --fs-10: 40rem;
+  --fs-11: 10rem;
+
+  --gapX: 6rem;
+  --gapX-: -6rem;
+  --gap: 10rem;
+  --gap-: -10rem;
+  --gap-fluid: 20rem;
+  --gap-fluid-: -20rem;
+  --gap-container: var(--gap-fluid);
+  --gap-container-: var(--gap-fluid-);
+
+  --section-y: 80rem;
+  --section-y-md: 50rem;
+
+  --scroll-offset: 120rem;
+
+  --header-height: var(--scroll-offset);
+
+  --vh: 1vh;
+  @media (max-width: $lg) {
+    --gap: 6rem;
+    --gap-: -6rem;
+    --gap-fluid: 12rem;
+    --gap-fluid-: -12rem;
+
+    --section-y: 60rem;
+
+    --scroll-offset: 86rem;
+
+    --gap-container: 16rem;
+    --gap-container-: -16rem;
+  }
+  @media (max-width: $sm) {
+    --fs-default: 14rem;
+    --fs-1: 24rem;
+    --fs-2: 20rem;
+    --fs-3: 16rem;
+    --fs-4: 16rem;
+    --fs-5: 16rem;
+  }
+}

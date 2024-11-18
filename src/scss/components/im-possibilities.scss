@@ -1,0 +1,184 @@
+.im-possibilities {
+  background: $whiteColor;
+  padding: var(--section-y) 0;
+  position: relative;
+  overflow: hidden;
+  &__container {
+  }
+  &__content {
+    max-width: 554rem;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: $sm) {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+  &__title {
+    margin: 0 0 12rem;
+    @media (max-width: $sm) {
+    }
+  }
+  &__text {
+    margin: 0 0 40rem;
+    line-height: $lineHeight8;
+    color: $greyDescColor;
+    @media (max-width: $sm) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__grid {
+    margin-bottom: var(--gap-fluid-);
+    @media (max-width: $md) {
+    }
+    &--2 {
+    }
+    &-col {
+      margin-bottom: var(--gap-fluid);
+      display: flex;
+      flex-direction: column;
+      @media (max-width: $md) {
+        max-width: 100%;
+        display: block;
+        flex-basis: 100%;
+      }
+      &:nth-child(2) {
+        @media (max-width: $md) {
+          order: -1;
+        }
+      }
+    }
+    &-appeal {
+      background: #F0F6FC;
+      margin-bottom: 12rem;
+      padding: 24rem;
+      font-weight: normal !important;
+      line-height: $lineHeightDefault;
+      color: $greyDescColor;
+      border-radius: $radiusExs;
+      overflow: hidden;
+      @media (max-width: $sm) {
+        padding: 12rem;
+      }
+      > * {
+        max-width: 470rem;
+        @media (max-width: $md) {
+          max-width: 100%;
+        }
+      }
+    }
+    &-photo-slider {
+      width: 100%;
+      margin-bottom: 12rem;
+      flex-grow: 1;
+      @media (max-width: $md) {
+        margin-bottom: 0;
+      }
+      &-content {
+        width: 100%;
+        max-height: 100%;
+        padding: var(--gap) var(--gap-fluid);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: $whiteColor;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        @media (max-width: $sm) {
+          padding: var(--gap-fluid);
+          flex-wrap: wrap;
+        }
+      }
+      &-title {
+        margin: 0;
+        @media (max-width: $sm) {
+          max-width: 100%;
+          margin: 0 0 30rem;
+          font-size: var(--fs-8);
+          flex-basis: 100%;
+        }
+      }
+      &-pagination {
+        background: $whiteColor;
+        padding: 2rem;
+        border-radius: 40rem;
+        display: flex;
+        align-items: center;
+        &-list {
+        }
+        &-moore {
+          background: $accentColor;
+          width: 40rem;
+          height: 40rem;
+          margin: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 500;
+          font-size: var(--fs-6);
+          color: $whiteColor;
+          text-align: center;
+          border-radius: 50%;
+        }
+      }
+    }
+    &-photo-card {
+      flex-grow: 1;
+      @media (max-width: $md) {
+        margin-bottom: 12rem;
+      }
+    }
+    &-resolution {
+      background: $darkColor;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28rem 28rem 12rem;
+      color: $whiteColor;
+      border-radius: $radiusExs;
+      overflow: hidden;
+      @media (max-width: $md) {
+      }
+      @media (max-width: $sm) {
+        padding: var(--gap-fluid);
+      }
+      &-variant {
+        background: #FAFAFA;
+        padding: 0 var(--gap);
+        display: flex;
+        border-radius: $radiusExs;
+        overflow: hidden;
+        @media (max-width: $sm) {
+          padding: 0 var(--gap-fluid);
+          border-radius: 10rem;
+        }
+      }
+      &-card {
+        flex: 1;
+      }
+      &-title {
+        margin: var(--gap) 0 0;
+        text-align: center;
+        @media (max-width: $lg) {
+          margin-top: 10rem;
+        }
+        @media (max-width: $sm) {
+          font-size: var(--fs-8);
+          text-align: left;
+        }
+      }
+    }
+  }
+  &__footer {
+    margin: 40rem 0 0;
+    display: flex;
+    justify-content: center;
+    @media (max-width: $sm) {
+      margin-top: 24rem;
+    }
+    &-btn {
+    }
+  }
+}

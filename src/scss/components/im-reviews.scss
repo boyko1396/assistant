@@ -1,0 +1,87 @@
+.im-reviews {
+  background: #F9F9F9;
+  padding: var(--section-y) 0;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: $lg) {
+  }
+  &__container {
+  }
+  &__content {
+    max-width: 554rem;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: $sm) {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+  &__title {
+    margin: 0 0 12rem;
+  }
+  &__text {
+    margin: 0 -24rem 40rem;
+    line-height: $lineHeight8;
+    color: $greyDescColor;
+    @media (max-width: $sm) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  &__circle {
+    width: 100%;
+    max-width: 300rem;
+    margin: 0 auto -146rem;
+  }
+  &__rating {
+    &-row {
+      margin-bottom: 24rem;
+      justify-content: center;
+    }
+    &-col {
+      @media (max-width: $md) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__slider {
+    &.swiper {
+      overflow: visible;
+    }
+    .swiper-wrapper {
+    }
+    .swiper-slide {
+      max-width: 800rem;
+      height: initial;
+      .im-reviews-card {
+        color: $greyDescColor;
+        transition: $transition;
+        transition-property: color;
+      }
+      .im-reviews-card__rating {
+        filter: grayscale(1);
+        opacity: .26;
+        transition: $transition;
+        transition-property: filter, opacity;
+      }
+      &.swiper-slide-active {
+        .im-reviews-card {
+          color: $blackColor;
+        }
+        .im-reviews-card__rating {
+          filter: unset;
+          opacity: 1;
+        }
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+    &-control {
+      margin: 24rem 0 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

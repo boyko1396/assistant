@@ -1,0 +1,90 @@
+.im-audiences {
+  padding: var(--section-y) 0;
+  position: relative;
+  overflow: hidden;
+  &__bg {
+    width: 100%;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    img {
+      width: 1920rem;
+      height: auto;
+      display: block;
+    }
+  }
+  &__container {
+  }
+  &__content {
+    max-width: 554rem;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: $sm) {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+  &__title {
+    margin: 0 0 12rem;
+  }
+  &__text {
+    margin: 0 -10rem 40rem;
+    line-height: $lineHeight8;
+    color: $greyDescColor;
+    @media (max-width: $sm) {
+      margin: 0 0 24rem;
+    }
+  }
+  &__list {
+    padding-bottom: 40rem;
+    @media (max-width: $sm) {
+      margin: 0 -16rem;
+      padding: 0 10rem;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    &-col {
+      @media (min-width: $sm-mf) {
+        margin-bottom: var(--gap-fluid);
+        will-change: transform;
+        position: relative;
+      }
+      @media (max-width: $sm) {
+        max-width: unset;
+        flex: 0;
+      }
+      &:nth-child(4n+1) {
+        @media (min-width: $sm-mf) {
+          top: 0;
+        }
+      }
+      &:nth-child(4n+2) {
+        @media (min-width: $sm-mf) {
+          top: 60rem;
+        }
+      }
+      &:nth-child(4n+3) {
+        @media (min-width: $sm-mf) {
+          top: 120rem;
+        }
+      }
+      &:nth-child(4n+4) {
+        @media (min-width: $sm-mf) {
+          top: 180rem;
+        }
+      }
+    }
+    &-card {
+      @media (max-width: $sm) {
+        width: 280rem;
+      }
+    }
+  }
+}

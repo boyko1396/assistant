@@ -1,0 +1,38 @@
+@use 'sass:math';
+
+/** Local font inclusion from the "./src/fonts" folder */
+@import 'config/fonts';
+
+/** Variable inclusion */
+@import 'config/vars';
+
+/** Inclusion of sass functions, mixins, and style extends */
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/patternSelectors';
+
+/** Reset */
+@import 'config/default';
+
+/** Libraries */
+@import 'libs/swiper';
+
+/** Common parameters, templates, and utility classes */
+@import 'config/media';
+@import 'config/base';
+
+/** Common BEM blocks used throughout the project */
+@import 'config/common';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/im-intro';
+@import 'components/im-possibilities';
+@import 'components/im-aspects';
+@import 'components/im-features';
+@import 'components/im-tools';
+@import 'components/im-audiences';
+@import 'components/im-reviews';
+@import 'components/im-faq';
+@import 'components/im-benefits';
+
+/** Inclusion of styles for individual blocks and sections */

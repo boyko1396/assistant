@@ -1,0 +1,25 @@
+.im-faq {
+  padding: var(--section-y) 0;
+  @media (max-width: $md) {
+  }
+  &__container {
+  }
+  &__title {
+    margin-bottom: 40rem;
+    text-align: center;
+    @media (max-width: $sm) {
+      margin-bottom: 24rem;
+      text-align: left;
+    }
+  }
+  &__list {
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: var(--gap);
+        @media (max-width: $sm) {
+          margin-bottom: var(--gap-fluid);
+        }
+      }
+    }
+  }
+}
