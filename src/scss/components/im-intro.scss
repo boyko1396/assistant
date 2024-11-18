@@ -1,7 +1,6 @@
 .im-intro {
   padding: 18rem 0 0;
   position: relative;
-  overflow: hidden;
   @media (max-width: $sm) {
     padding-top: 12rem;
   }
@@ -163,6 +162,8 @@
       background: linear-gradient(97.84deg, rgba($whiteColor, 0.55) 0%, rgba($whiteColor, 0.2) 100%);
       backdrop-filter: blur(10px);
       width: 100%;
+      display: flex;
+      flex-direction: column;
       flex-basis: 100%;
       border-radius: $radiusSm;
       box-shadow: 0 10px 40px rgba($blackColor, .1);
@@ -170,11 +171,17 @@
     }
     &-content {
       display: flex;
-      padding: var(--section-y) 48rem;
+      padding: 76rem 48rem;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       text-align: left;
+      &.--theme {
+        &-clear {
+          background: transparent;
+          box-shadow: none;
+        }
+      }
       @media (max-width: $lg) {
         padding: 36rem 24rem;
       }
@@ -219,10 +226,22 @@
         justify-content: center;
       }
     }
+    &-hero {
+      @extend %img-cover;
+      width: 100%;
+      height: 100%;
+      @media (max-width: $sm) {
+        height: initial;
+        padding: 0 0 60%;
+      }
+      @media (max-width: $xs) {
+        padding: 0 0 74.3902439024%;
+      }
+    }
   }
   &__inner {
     margin: 0 var(--gap-container-);
-    padding: 0 var(--gap-container);
+    padding: 0 var(--gap-container) 1rem;
   }
   &__content {
     max-width: 640rem;
@@ -251,6 +270,13 @@
     color: $greyDescColor;
     @media (max-width: $sm) {
       margin-bottom: 24rem;
+    }
+    &.--mw {
+      &-sm {
+        max-width: 360rem;
+        @media (max-width: $sm) {
+        }
+      }
     }
   }
   &__btn-group {

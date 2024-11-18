@@ -804,7 +804,7 @@
     background: rgba($blackColor, .25);
     backdrop-filter: blur(24px);
     margin: 0;
-    padding: 9rem 8rem 10rem 8rem;
+    padding: 8rem 8rem 10rem 8rem;
     font-weight: 500;
     font-size: inherit;
     color: $whiteColor;
@@ -1006,6 +1006,7 @@
   @media (max-width: $sm) {
   }
   &__picture {
+    @extend %img-cover;
     width: 80rem;
     height: 80rem;
     margin: 0 0 36rem;
@@ -1016,6 +1017,16 @@
       &-sm {
         width: 48rem;
         height: 48rem;
+      }
+      &-auto {
+        width: 136rem;
+        height: 48rem;
+      }
+    }
+    &.--type {
+      &-json {
+        margin-bottom: 9rem;
+        margin-left: -15rem;
       }
     }
   }
@@ -1085,6 +1096,15 @@
   overflow: hidden;
   @media (max-width: $sm) {
     padding: 12rem;
+  }
+  &--theme {
+    &-grey {
+      color: $blackColor;
+      box-shadow: $boxShadowBLack2;
+      .im-face-card__text {
+        color: $greyDescColor;
+      }
+    }
   }
   &__content {
     height: 100%;
@@ -1159,5 +1179,200 @@
     font-weight: normal;
     line-height: $lineHeight1;
     color: $greyDescColor;
+  }
+}
+
+.comparison-img {
+  border-radius: $radiusSm;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  &__btn {
+    @extend %btn-reset;
+    width: 80rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: none;
+    cursor: grab;
+    z-index: 1;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      pointer-events: none;
+      z-index: -1;
+    }
+    &:before {
+      background: #212121;
+      width: 4rem;
+      height: 100%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+    &:after {
+      background: $darkColor;
+      width: 32rem;
+      height: 32rem;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      transition: all .2 ease;
+      @media (max-width: $sm) {
+        width: 44rem;
+        height: 44rem;
+      }
+    }
+    &:active,
+    &:focus  {
+      cursor: grabbing;
+    }
+    span {
+      background: 50% / contain no-repeat;
+      background-image: url('data:image/svg+xml,%3Csvg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M4.85355 0.146447C4.65829 -0.0488155 4.34171 -0.0488155 4.14645 0.146447L0.146447 4.14645C-0.0488157 4.34171 -0.0488157 4.65829 0.146447 4.85355L4.14645 8.85355C4.34171 9.04882 4.65829 9.04882 4.85355 8.85355C5.04882 8.65829 5.04882 8.34171 4.85355 8.14645L1.20711 4.5L4.85355 0.853553C5.04882 0.658291 5.04882 0.341709 4.85355 0.146447Z" fill="white"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M8.14645 0.146447C8.34171 -0.0488155 8.65829 -0.0488155 8.85355 0.146447L12.8536 4.14645C13.0488 4.34171 13.0488 4.65829 12.8536 4.85355L8.85355 8.85355C8.65829 9.04882 8.34171 9.04882 8.14645 8.85355C7.95118 8.65829 7.95118 8.34171 8.14645 8.14645L11.7929 4.5L8.14645 0.853553C7.95118 0.658291 7.95118 0.341709 8.14645 0.146447Z" fill="white"/%3E%3C/svg%3E%0A');
+      width: 13rem;
+      height: 9rem;
+      display: block;
+      flex-shrink: 0;
+      pointer-events: none;
+      @media (max-width: $sm) {
+        width: 22rem;
+        height: 13rem;
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+    &.js-comparison-img-before {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.draw-card {
+  @media (max-width: $sm) {
+    display: flex;
+    flex-direction: column;
+  }
+  &__box {
+    background: linear-gradient(97.84deg, rgba($whiteColor, .55) 0%, rgba($whiteColor, .2) 100%);
+    backdrop-filter: blur(10px);
+    margin-bottom: var(--gap-fluid);
+    padding: 24rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: $radiusExs;
+    box-shadow: $boxShadowBLack2;
+    @media (max-width: $sm) {
+      max-width: 100%;
+      padding: var(--gap-fluid);
+      flex: 0 0 100%;
+      flex-wrap: wrap;
+    }
+    &-content {
+      max-width: 66%;
+      margin-right: 24rem;
+      flex-basis: 66%;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin: 0 0 24rem;
+        flex-basis: 100%;
+      }
+    }
+    &-aside {
+      flex-shrink: 0;
+    }
+  }
+  &__title {
+    margin: 0 0 12rem;
+    @media (max-width: $sm) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__text {
+    font-weight: normal;
+    line-height: $lineHeight1;
+    color: $greyDescColor;
+  }
+  &__btn {
+  }
+  &__goldfish {
+    width: 100%;
+    max-width: 826rem;
+    margin: 0 auto;
+    position: relative;
+    @media (max-width: $sm) {
+      margin-bottom: var(--gap-fluid);
+      order: -1;
+    }
+    &-hero {
+      pointer-events: none;
+      user-select: none;
+      img {
+        width: 100%;
+        height: auto;
+        pointer-events: none;
+      }
+    }
+    &-title {
+      background: #F0F6FC;
+      padding: 10rem;
+      font-weight: 500;
+      font-size: 14rem;
+      line-height: 1.42;
+      position: absolute;
+      top: 61.8%;
+      left: 25.4%;
+      border-radius: $radiusExs;
+      @media (max-width: $sm) {
+        padding: 6rem 12rem;
+        border-radius: 5rem;
+        top: 31%;
+        left: 26%;
+      }
+      &:before {
+        background: 50% / contain no-repeat;
+        background-image: url('data:image/svg+xml,%3Csvg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="48" height="48" rx="24" fill="%230057FF"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M23.9999 11.6882C24.5522 11.6882 24.9999 12.136 24.9999 12.6882L24.9999 23.002H35.3136C35.8658 23.002 36.3136 23.4497 36.3136 24.002C36.3136 24.5542 35.8658 25.002 35.3136 25.002H24.9999L24.9999 35.3156C24.9999 35.8679 24.5522 36.3156 23.9999 36.3156C23.4476 36.3156 22.9999 35.8679 22.9999 35.3156L22.9999 25.002L12.6862 25.002C12.1339 25.002 11.6862 24.5542 11.6862 24.002C11.6862 23.4497 12.1339 23.002 12.6862 23.002L22.9999 23.002L22.9999 12.6882C22.9999 12.136 23.4476 11.6882 23.9999 11.6882Z" fill="white"/%3E%3C/svg%3E%0A');
+        width: 48rem;
+        height: 48rem;
+        margin: 0 0 8rem;
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        @media (max-width: $sm) {
+          width: 32rem;
+          height: 32rem;
+          margin: 0;
+          right: -24rem;
+          bottom: -11rem;
+        }
+      }
+    }
+  }
+  &__result-comparison {
+    &-wrapper {
+      width: 100%;
+      max-width: 466rem;
+      margin: 0 auto;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin-bottom: var(--gap-fluid);
+        order: -1;
+      }
+    }
   }
 }

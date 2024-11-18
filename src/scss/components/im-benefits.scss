@@ -154,4 +154,20 @@
       }
     }
   }
+  &__appeal {
+    background: linear-gradient(97.84deg, rgba($whiteColor, .55) 0%, rgba($whiteColor, .2) 100%);
+    margin: 0 0 var(--gap-fluid);
+    backdrop-filter: blur(10px);
+    border-radius: $radiusExs;
+    box-shadow: 0 5px 20px rgba($blackColor, .1);
+    &-title {
+      max-width: 540rem;
+      margin: 0 auto;
+      padding: 24rem;
+      text-align: center;
+      @media (max-width: $sm) {
+        text-align: left;
+      }
+    }
+  }
 }

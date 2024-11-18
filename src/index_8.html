@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Assistant AI - Логотип онлайн'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- im-intro BEGIN -->
+          <section id="intro" class="im-intro">
+            <div class="container container--size-md im-intro__container">
+              <div class="im-intro__services-bg">
+                <div class="row im-intro__services-bg-row">
+                  <div class="row__col--6 im-intro__services-bg-col-content">
+                    <div class="im-intro__services-bg-content">
+                      <div class="im-intro__title-wrapper">
+                        <h1 class="im-intro__title">Создавайте <span class="color-accent">уникальные логотипы</span> онлайн за&nbsp;секунды</h1>
+                      </div>
+                      <div class="u-content im-intro__text">
+                        <p>Assistant AI поможет создать профессиональный логотип и&nbsp;фавикон без&nbsp;сложных программ и&nbsp;дизайнерских навыков</p>
+                      </div>
+                      <div class="btn-group">
+                        <div class="btn-group__inner">
+                          <div class="btn-group__col">
+                            <a href="#" class="btn btn--theme-accent-fill btn--size-md btn-group__el">
+                              <span class="btn__inner">
+                                <span class="btn__title">Создать логотип</span>
+                                <span class="btn__icon btn__icon--dir-rtl">
+                                  <svg class="u-icon">
+                                    <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                                  </svg>
+                                </span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row__col--6 im-intro__services-bg-col-media">
+                    <div class="im-intro__services-bg-media">
+                      <picture class="im-intro__services-bg-hero">
+                        <!--<source
+                          srcset="images/intro-hero-logo.webp"
+                          type="image/webp">-->
+                        <img
+                          src="images/intro-hero-logo.jpg"
+                          width="580"
+                          height="432"
+                          alt="Заменить лицо">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- im-intro END -->
+          <!-- im-face BEGIN -->
+          <section id="features" class="im-face im-face--theme-grey --bsh-black">
+            <div class="container container--size-md im-face__container">
+              <div class="im-face__content">
+                <h2 class="im-face__title --mw-md">Быстрое создание логотипов&nbsp;и&nbsp;фавиконов</h2>
+                <div class="u-content im-face__text --mw-md">
+                  <p>Создавайте уникальные логотипы для бизнеса,&nbsp;проектов или личного бренда.<br>Воспользуйтесь простыми инструментами, чтобы получить профессиональный результат за&nbsp;несколько кликов</p>
+                </div>
+              </div>
+              <div class="im-face__list">
+                <div class="row im-face__list-row">
+                  <div class="row__col--6 im-face__list-col">
+                    <article class="im-face-card im-face-card--theme-grey im-face__list-card">
+                      <div class="im-face-card__content">
+                        <h3 class="fs-4 im-face-card__title">Логотип онлайн</h3>
+                        <div class="u-content im-face-card__text">
+                          <p>Генерируйте уникальные логотипы, которые&nbsp;подчеркнут стиль вашего бренда.&nbsp;Выберите формат, цветовую схему,&nbsp;а также иконку&nbsp;— Assistant&nbsp;AI сгенерирует&nbsp;идеальный логотип специально для вашей компании</p>
+                        </div>
+                        <a href="#" class="btn btn--theme-dark-fill btn--size-md im-face-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Создать логотип</span>
+                            <span class="btn__icon btn__icon--dir-rtl">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--6 im-face__list-col">
+                    <article class="im-face-card im-face-card--theme-grey im-face__list-card">
+                      <div class="im-face-card__media">
+                        <video autoplay muted loop playsinline preload="auto" poster="" class="im-face-card__video">
+                          <source src="static/video/logo-logo.mp4" type="video/mp4">
+                          <source src="static/video/logo-logo.webm" type="video/webm">
+                        </video>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="row im-face__list-row">
+                  <div class="row__col--6 im-face__list-col">
+                    <article class="im-face-card im-face-card--theme-grey im-face__list-card">
+                      <div class="im-face-card__content">
+                        <h3 class="fs-4 im-face-card__title">Фавикон онлайн</h3>
+                        <div class="u-content im-face-card__text">
+                          <p>Создайте миниатюрную версию логотипа для вашего веб-сайта. Простой интерфейс нейросети поможет сделать профессиональный фавикон меньше, чем&nbsp;за минуту</p>
+                        </div>
+                        <a href="#" class="btn btn--theme-dark-fill btn--size-md im-face-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Создать фавикон</span>
+                            <span class="btn__icon btn__icon--dir-rtl">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--6 im-face__list-col">
+                    <article class="im-face-card im-face-card--theme-grey im-face__list-card">
+                      <div class="im-face-card__media">
+                        <video autoplay muted loop playsinline preload="auto" poster="" class="im-face-card__video">
+                          <source src="static/video/logo-favicon.mp4" type="video/mp4">
+                          <source src="static/video/logo-favicon.webm" type="video/webm">
+                        </video>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- im-face END -->
+          <!-- im-benefits BEGIN -->
+          <section id="benefits" class="im-benefits">
+            <picture class="im-benefits__bg">
+              <img
+                src="images/features-bg.svg"
+                alt="Image to image — лучший выбор  для преобразования изображений"
+                width="1920"
+                height="1162">
+            </picture>
+            <div class="container container--size-md im-benefits__container">
+              <div class="im-benefits__appeal">
+                <h2 class="im-benefits__appeal-title">Assistant&nbsp;AI — <span class="color-accent">лучший выбор</span>  для создания логотипов</h2>
+              </div>
+              <div class="row im-benefits__list">
+                <div class="row__col--4 im-benefits__list-col">
+                  <article class="im-benefits-card im-benefits__list-card">
+                    <picture class="im-benefits-card__picture --size-auto">
+                      <img
+                        src="images/benefits-card-5.svg"
+                        width="142"
+                        height="48"
+                        alt="Персонализация">
+                    </picture>
+                    <h3 class="fs-4 im-benefits-card__title">Персонализация</h3>
+                    <div class="u-content im-benefits-card__text">
+                      <p>Настройте лого на свой вкус —  от&nbsp;символики до цветовых решений</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-benefits__list-col">
+                  <article class="im-benefits-card im-benefits__list-card">
+                    <picture class="im-benefits-card__picture --size-auto">
+                      <!--<source
+                        srcset="images/benefits-card-5.webp 1x, images/benefits-card-5@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/benefits-card-5.png"
+                        srcset="images/benefits-card-5.png 1x, images/benefits-card-5@2x.png 2x"
+                        width="142"
+                        height="48"
+                        alt="Простота использования">
+                    </picture>
+                    <h3 class="fs-4 im-benefits-card__title">Простота использования</h3>
+                    <div class="u-content im-benefits-card__text">
+                      <p>Создание логотипа и фавикона занимает всего пару минут — не нужно быть дизайнером</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-benefits__list-col">
+                  <article class="im-benefits-card im-benefits__list-card">
+                    <picture class="im-benefits-card__picture --size-auto">
+                      <!--<source
+                        srcset="images/benefits-card-6.webp 1x, images/benefits-card-6@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/benefits-card-6.png"
+                        srcset="images/benefits-card-6.png 1x, images/benefits-card-6@2x.png 2x"
+                        width="142"
+                        height="48"
+                        alt="Профессиональный вид">
+                    </picture>
+                    <h3 class="fs-4 im-benefits-card__title">Профессиональный вид</h3>
+                    <div class="u-content im-benefits-card__text">
+                      <p>Логотипы в разрешении 300dpi, подходящие как для веб-сайтов, так&nbsp;и&nbsp;печатной продукции</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <footer class="im-benefits__footer">
+                <a href="#" class="btn btn--theme-accent-fill btn--size-md im-benefits__footer-btn">
+                  <span class="btn__inner">
+                    <span class="btn__title">Попробовать</span>
+                    <span class="btn__icon btn__icon--dir-rtl">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </footer>
+            </div>
+          </section>
+          <!-- im-benefits END -->
+          <!-- im-tools BEGIN -->
+          <section id="tools" class="im-tools --bsh-black">
+            <div class="container container--size-md im-tools__container">
+              <div class="im-tools__content">
+                <h2 class="im-tools__title">Другие функции для работы с&nbsp;изображениями</h2>
+                <div class="u-content im-tools__text">
+                  <p>Помимо создания логотипов, Assistant&nbsp;AI предлагает широкий выбор инструментов для редактирования и создания изображений</p>
+                </div>
+              </div>
+              <div class="row im-tools__list">
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-10.webp 1x, images/tools-card-10@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-10.png"
+                        srcset="images/tools-card-10.png 1x, images/tools-card-10@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Создание фото">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Создание фото</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Создавайте любые изображения в нужном стиле за считанные секунды</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-11.webp 1x, images/tools-card-11@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-11.png"
+                        srcset="images/tools-card-11.png 1x, images/tools-card-11@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Улучшение качества">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Улучшение качества</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Повышайте резкость<br>и&nbsp;четкость изображений</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-2.webp 1x, images/tools-card-2@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-2.png"
+                        srcset="images/tools-card-2.png 1x, images/tools-card-2@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Удаление фона">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Удаление фона</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Убирайте фон с картинок и фото</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-19.webp 1x, images/tools-card-19@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-19.png"
+                        srcset="images/tools-card-19.png 1x, images/tools-card-19@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Генерация аватарок">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Генерация аватарок</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Создавайте уникальный аватар в&nbsp;нужном&nbsp;стиле</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-13.webp 1x, images/tools-card-13@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-13.png"
+                        srcset="images/tools-card-13.png 1x, images/tools-card-13@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Замена лица">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Замена лица</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Меняйте лица на фото с&nbsp;высоким уровнем&nbsp;точности и естественности</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-15.webp 1x, images/tools-card-15@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-15.png"
+                        srcset="images/tools-card-15.png 1x, images/tools-card-15@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Коллажи из фото">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Коллажи из фото</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Объединяйте лучшие моменты жизни<br>в&nbsp;креативные коллажи</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-16.webp 1x, images/tools-card-16@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-16.png"
+                        srcset="images/tools-card-16.png 1x, images/tools-card-16@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Дорисовка фото и картинок">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Дорисовка фото и картинок</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Добавляйте элементы на изображениях для&nbsp;улучшения композиции</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-17.webp 1x, images/tools-card-17@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-17.png"
+                        srcset="images/tools-card-17.png 1x, images/tools-card-17@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Объединение фото">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Объединение фото</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Легко соединяйте несколько фотографий в&nbsp;единое изображение</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-18.webp 1x, images/tools-card-18@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-18.png"
+                        srcset="images/tools-card-18.png 1x, images/tools-card-18@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Image to Image">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Image to Image</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Преобразуйте существующие<br>изображения, изменяя их стиль</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <footer class="im-tools__footer">
+                <a href="#" class="btn btn--theme-accent-fill btn--size-md im-tools__footer-bg">
+                  <span class="btn__inner">
+                    <span class="btn__title">Попробовать</span>
+                    <span class="btn__icon btn__icon--dir-rtl">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </footer>
+            </div>
+          </section>
+          <!-- im-tools END -->
+          <!-- im-audiences BEGIN -->
+          <section id="audiences" class="im-audiences">
+            <picture class="im-audiences__bg">
+              <img
+                src="images/features-bg.svg"
+                alt="Assistant AI — для тех, кто хочет уникальный логотип быстро и просто"
+                width="1920"
+                height="1162">
+            </picture>
+            <div class="container container--size-md im-audiences__container">
+              <div class="im-audiences__content">
+                <h2 class="im-audiences__title --mx-md"><span class="color-accent">Assistant&nbsp;AI</span> — для тех, кто хочет уникальный логотип быстро и просто</h2>
+                <div class="u-content im-audiences__text">
+                  <p>Фотографы, дизайнеры, маркетологи и&nbsp;просто любители — вы найдёте здесь всё, что нужно для создания ярких визуальных решений</p>
+                </div>
+              </div>
+              <div class="row im-audiences__list">
+                <div class="row__col--3 im-audiences__list-col">
+                  <article class="im-audiences-card im-audiences__list-card">
+                    <picture class="im-audiences-card__picture">
+                      <!--<source
+                        srcset="images/audiences-card-1.webp 1x, images/audiences-card-1@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/audiences-card-1.jpg"
+                        srcset="images/audiences-card-1.jpg 1x, images/audiences-card-1@2x.jpg 2x"
+                        width="356"
+                        height="220"
+                        alt="Фрилансеры">
+                    </picture>
+                    <div class="im-audiences-card__content">
+                      <h3 class="im-audiences-card__title">Фрилансеры</h3>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--3 im-audiences__list-col">
+                  <article class="im-audiences-card im-audiences__list-card">
+                    <picture class="im-audiences-card__picture">
+                      <!--<source
+                        srcset="images/audiences-card-2.webp 1x, images/audiences-card-2@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/audiences-card-2.jpg"
+                        srcset="images/audiences-card-2.jpg 1x, images/audiences-card-2@2x.jpg 2x"
+                        width="356"
+                        height="220"
+                        alt="Художники">
+                    </picture>
+                    <div class="im-audiences-card__content">
+                      <h3 class="im-audiences-card__title">Художники</h3>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--3 im-audiences__list-col">
+                  <article class="im-audiences-card im-audiences__list-card">
+                    <picture class="im-audiences-card__picture">
+                      <!--<source
+                        srcset="images/audiences-card-3.webp 1x, images/audiences-card-3@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/audiences-card-3.jpg"
+                        srcset="images/audiences-card-3.jpg 1x, images/audiences-card-3@2x.jpg 2x"
+                        width="356"
+                        height="220"
+                        alt="Мультипликаторы">
+                    </picture>
+                    <div class="im-audiences-card__content">
+                      <h3 class="im-audiences-card__title">Мультипликаторы</h3>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--3 im-audiences__list-col">
+                  <article class="im-audiences-card im-audiences__list-card">
+                    <picture class="im-audiences-card__picture">
+                      <!--<source
+                        srcset="images/audiences-card-4.webp 1x, images/audiences-card-4@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/audiences-card-4.jpg"
+                        srcset="images/audiences-card-4.jpg 1x, images/audiences-card-4@2x.jpg 2x"
+                        width="356"
+                        height="220"
+                        alt="Контент-менеджеры">
+                    </picture>
+                    <div class="im-audiences-card__content">
+                      <h3 class="im-audiences-card__title">Контент-менеджеры</h3>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--3 im-audiences__list-col">
+                  <article class="im-audiences-card im-audiences__list-card">
+                    <picture class="im-audiences-card__picture">
+                      <!--<source
+                        srcset="images/audiences-card-5.webp 1x, images/audiences-card-5@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/audiences-card-5.jpg"
+                        srcset="images/audiences-card-5.jpg 1x, images/audiences-card-5@2x.jpg 2x"
+                        width="356"
+                        height="220"
+                        alt="Фотографы">
+                    </picture>
+                    <div class="im-audiences-card__content">
+                      <h3 class="im-audiences-card__title">Фотографы</h3>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--3 im-audiences__list-col">
+                  <article class="im-audiences-card im-audiences__list-card">
+                    <picture class="im-audiences-card__picture">
+                      <!--<source
+                        srcset="images/audiences-card-6.webp 1x, images/audiences-card-6@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/audiences-card-6.jpg"
+                        srcset="images/audiences-card-6.jpg 1x, images/audiences-card-6@2x.jpg 2x"
+                        width="356"
+                        height="220"
+                        alt="Дизайнеры">
+                    </picture>
+                    <div class="im-audiences-card__content">
+                      <h3 class="im-audiences-card__title">Дизайнеры</h3>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--3 im-audiences__list-col">
+                  <article class="im-audiences-card im-audiences__list-card">
+                    <picture class="im-audiences-card__picture">
+                      <!--<source
+                        srcset="images/audiences-card-7.webp 1x, images/audiences-card-7@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/audiences-card-7.jpg"
+                        srcset="images/audiences-card-7.jpg 1x, images/audiences-card-7@2x.jpg 2x"
+                        width="356"
+                        height="220"
+                        alt="SMM-специалисты">
+                    </picture>
+                    <div class="im-audiences-card__content">
+                      <h3 class="im-audiences-card__title">SMM-специалисты</h3>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--3 im-audiences__list-col">
+                  <article class="im-audiences-card im-audiences__list-card">
+                    <picture class="im-audiences-card__picture">
+                      <!--<source
+                        srcset="images/audiences-card-8.webp 1x, images/audiences-card-8@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/audiences-card-8.jpg"
+                        srcset="images/audiences-card-8.jpg 1x, images/audiences-card-8@2x.jpg 2x"
+                        width="356"
+                        height="220"
+                        alt="Любители">
+                    </picture>
+                    <div class="im-audiences-card__content">
+                      <h3 class="im-audiences-card__title">Любители</h3>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- im-audiences END -->
+          <!-- im-reviews BEGIN -->
+          @@include('html/components/reviews.html')
+          <!-- im-reviews END -->
+          <!-- im-faq BEGIN -->
+          @@include('html/components/faq.html')
+          <!-- im-faq END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

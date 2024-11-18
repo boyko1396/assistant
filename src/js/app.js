@@ -14,6 +14,8 @@ import { SmoothScroll } from './modules/SmoothScroll.js';
 import { InitImageScrollAnimation } from './modules/GSAP.js';
 import InitializeAllSliders from './modules/SwiperInit.js';
 import FaqCard from './modules/FaqCard.js';
+import LottieIcons from './modules/LottieIcons.js';
+import ComparisonSlider from './modules/ComparisonSlider.js';
 
 // set vh
 SetVH();
@@ -93,6 +95,16 @@ document.addEventListener('DOMContentLoaded', function() {
       },
     },
   ]);
+
+  // lottie icon animated
+  new LottieIcons();
+
+  // Comparison Slider
+  const initComparison = () => {
+    const slider = new ComparisonSlider('.js-comparison-img');
+  };
+
+  initComparison();
 
   // GSAP animation
   InitImageScrollAnimation();

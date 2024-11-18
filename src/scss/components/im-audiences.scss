@@ -33,6 +33,24 @@
   }
   &__title {
     margin: 0 0 12rem;
+    &.--mx {
+      &-md {
+        margin-right: -40rem;
+        margin-left: -40rem;
+        @media (max-width: $sm) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+      &-lg {
+        margin-right: -140rem;
+        margin-left: -140rem;
+        @media (max-width: $sm) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+    }
   }
   &__text {
     margin: 0 -14rem 40rem;
@@ -40,6 +58,16 @@
     color: $greyDescColor;
     @media (max-width: $sm) {
       margin: 0 0 24rem;
+    }
+    &.--mx {
+      &-lg {
+        margin-right: -82rem;
+        margin-left: -82rem;
+        @media (max-width: $sm) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
     }
   }
   &__list {

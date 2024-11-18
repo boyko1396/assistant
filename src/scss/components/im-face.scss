@@ -5,6 +5,15 @@
   position: relative;
   overflow: hidden;
   z-index: 0;
+  &--theme {
+    &-grey {
+      background: #F9F9F9;
+      color: $blackColor;
+      .im-face__text {
+        color: $greyDescColor;
+      }
+    }
+  }
   &__bg {
     display: none;
     @media (min-width: $lg-mf) {
@@ -41,6 +50,13 @@
     @media (max-width: $sm) {
       max-width: 100%;
     }
+    &.--mw {
+      &-md {
+        @media (max-width: $sm) {
+          max-width: 100%;
+        }
+      }
+    }
   }
   &__text {
     max-width: 910rem;
@@ -50,6 +66,20 @@
     @media (max-width: $sm) {
       max-width: 100%;
       margin: 0 0 24rem;
+    }
+    &.--mw {
+      &-md {
+        max-width: 666rem;
+        @media (max-width: $sm) {
+          max-width: 100%;
+        }
+      }
+      &-semi {
+        max-width: 800rem;
+        @media (max-width: $sm) {
+          max-width: 100%;
+        }
+      }
     }
   }
   &__list {
@@ -82,6 +112,13 @@
     &-card {
       height: 100%;
       @media (max-width: $sm) {
+      }
+    }
+  }
+  &__draw {
+    &-card {
+      & + & {
+        margin-top: var(--gap-fluid);
       }
     }
   }

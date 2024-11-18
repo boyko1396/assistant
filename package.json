@@ -79,6 +79,8 @@
   },
   "dependencies": {
     "gsap": "^3.12.5",
+    "image-comparison-slider": "^1.0.4",
+    "lottie-web": "^5.12.2",
     "swiper": "^11.1.14"
   }
 }
