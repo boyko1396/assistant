@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   @@include('html/head.html', {
-    'title': 'Assistant AI - Улучшить картинку'
+    'title': 'Assistant AI - Замена лица'
   })
   <body class="u-scrollbar">
 
@@ -16,20 +16,20 @@
           <!-- im-intro BEGIN -->
           <section id="intro" class="im-intro">
             <div class="container container--size-md im-intro__container">
-              <div class="u-box im-intro__improve">
-                <div class="im-intro__improve-content">
+              <div class="im-intro__face">
+                <div class="im-intro__face-content">
                   <div class="im-intro__title-wrapper">
-                    <h1 class="im-intro__title">Повышайте качество картинок с&nbsp;Assistant&nbsp;AI</h1>
+                    <h1 class="im-intro__title">Меняйте лица на&nbsp;фото <span class="color-accent">легко&nbsp;и&nbsp;быстро</span></h1>
                   </div>
                   <div class="u-content im-intro__text">
-                    <p>Превратите обычные картинки в высококачественные изображения с&nbsp;четкими деталями и&nbsp;яркими цветами — всего&nbsp;за несколько кликов</p>
+                    <p>Assistant&nbsp;AI позволяет заменить лицо на фото за&nbsp;секунды — попробуйте Face Swap для создания весёлых и&nbsp;креативных изображений</p>
                   </div>
-                  <div class="d-sm-none btn-group im-intro__improve-btn-group">
+                  <div class="d-sm-none btn-group im-intro__face-btn-group">
                     <div class="btn-group__inner">
                       <div class="btn-group__col">
                         <a href="#" class="btn btn--theme-accent-fill btn--size-md btn-group__el">
                           <span class="btn__inner">
-                            <span class="btn__title">Улучшить картинку</span>
+                            <span class="btn__title">Заменить лицо</span>
                             <span class="btn__icon btn__icon--dir-rtl">
                               <svg class="u-icon">
                                 <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
@@ -41,19 +41,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="im-intro__improve-media">
-                  <div class="im-intro__improve-video">
-                    <video autoplay muted loop playsinline preload="auto" poster="images/video-placeholder-4.jpg" class="im-intro__improve-video-el">
-                      <source src="static/video/improve-picture-1.mp4" type="video/mp4">
-                      <source src="static/video/improve-picture-1.webm" type="video/webm">
-                    </video>
-                  </div>
-                  <div class="d-sm-block btn-group im-intro__improve-btn-group">
+                <div class="im-intro__face-media">
+                  <picture class="im-intro__face-hero">
+                    <!--<source
+                      srcset="images/intro-hero-face.webp 1x, images/intro-hero-face@2x.webp 2x"
+                      type="image/webp">-->
+                    <img
+                      src="images/intro-hero-face.png"
+                      srcset="images/intro-hero-face.png 1x, images/intro-hero-face@2x.png 2x"
+                      width="601"
+                      height="441"
+                      alt="Заменить лицо">
+                  </picture>
+                  <div class="d-sm-block btn-group im-intro__face-btn-group">
                     <div class="btn-group__inner">
                       <div class="btn-group__col">
                         <a href="#" class="btn btn--theme-accent-fill btn--size-md btn-group__el">
                           <span class="btn__inner">
-                            <span class="btn__title">Улучшить картинку</span>
+                            <span class="btn__title">Заменить лицо</span>
                             <span class="btn__icon btn__icon--dir-rtl">
                               <svg class="u-icon">
                                 <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
@@ -69,82 +74,84 @@
             </div>
           </section>
           <!-- im-intro END -->
-          <!-- im-improve BEGIN -->
-          <section id="features" class="im-improve --bsh-black">
-            <div class="container container--size-md im-improve__container">
-              <div class="im-improve__content">
-                <h2 class="im-improve__title --mw-lg">Повышайте разрешение и&nbsp;качество изображений <span class="color-accent">легко&nbsp;и&nbsp;быстро</span></h2>
-                <div class="u-content im-improve__text --mw-lg">
-                  <p>Assistant AI поможет вам увеличить разрешение и улучшить качество картинки, делая её четкой и яркой. Независимо от формата изображения, наш ИИ обеспечит максимальную детализацию и качество</p>
+          <!-- im-face BEGIN -->
+          <section id="features" class="im-face">
+            <div class="container container--size-md im-face__container">
+              <div class="im-face__content">
+                <h2 class="im-face__title">Заменяйте лица на фото с&nbsp;помощью искусственного интеллекта</h2>
+                <div class="u-content im-face__text">
+                  <p>С Assistant&nbsp;AI вы можете заменить лица на&nbsp;фото, используя мощные алгоритмы ИИ, которые обеспечивают точную подгонку и&nbsp;реалистичное наложение. Процесс автоматизирован и&nbsp;прост для всех</p>
                 </div>
               </div>
-              <div class="im-improve__list">
-                <div class="row im-improve__list-row">
-                  <div class="row__col--4 im-improve__list-col">
-                    <article class="im-improve-card im-improve__list-card">
-                      <div class="u-box im-improve-card__media">
-                        <video autoplay muted loop playsinline preload="auto" poster="" class="im-improve-card__media-video">
-                          <source src="static/video/improve-picture-2.mp4" type="video/mp4">
-                          <source src="static/video/improve-picture-2.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="im-improve-card__content">
-                        <h3 class="fs-4 im-improve-card__title">Изменить разрешение фото</h3>
-                        <div class="u-content im-improve-card__text">
-                          <p>Преобразуйте изображение<br>до&nbsp;нужного вам&nbsp;разрешения</p>
+              <div class="im-face__list">
+                <div class="row im-face__list-row">
+                  <div class="row__col--6 im-face__list-col">
+                    <article class="im-face-card im-face__list-card">
+                      <div class="im-face-card__content">
+                        <h3 class="fs-4 im-face-card__title">Заменить лицо</h3>
+                        <div class="u-content im-face-card__text">
+                          <p>Меняйте лица на фото, создавая<br>удивительные&nbsp;эффекты и&nbsp;новые образы</p>
                         </div>
+                        <a href="#" class="btn btn--theme-dark-fill btn--size-md im-face-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Попробовать</span>
+                            <span class="btn__icon btn__icon--dir-rtl">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
                       </div>
                     </article>
                   </div>
-                  <div class="row__col--4 im-improve__list-col">
-                    <article class="im-improve-card im-improve__list-card">
-                      <div class="u-box im-improve-card__media">
-                        <video autoplay muted loop playsinline preload="auto" poster="" class="im-improve-card__media-video">
-                          <source src="static/video/improve-picture-3.mp4" type="video/mp4">
-                          <source src="static/video/improve-picture-3.webm" type="video/webm">
+                  <div class="row__col--6 im-face__list-col">
+                    <article class="im-face-card im-face__list-card">
+                      <div class="im-face-card__media">
+                        <video autoplay muted loop playsinline preload="auto" poster="" class="im-face-card__video">
+                          <source src="static/video/face-1.mp4" type="video/mp4">
+                          <source src="static/video/face-1.webm" type="video/webm">
                         </video>
-                      </div>
-                      <div class="im-improve-card__content">
-                        <h3 class="fs-4 im-improve-card__title">Увеличить качество фото</h3>
-                        <div class="u-content im-improve-card__text">
-                          <p>Улучшите детали, контраст и&nbsp;яркость для&nbsp;более выразительного изображения</p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="row__col--4 im-improve__list-col">
-                    <article class="im-improve-card im-improve__list-card">
-                      <div class="u-box im-improve-card__media">
-                        <video autoplay muted loop playsinline preload="auto" poster="" class="im-improve-card__media-video">
-                          <source src="static/video/improve-picture-4.mp4" type="video/mp4">
-                          <source src="static/video/improve-picture-4.webm" type="video/webm">
-                        </video>
-                      </div>
-                      <div class="im-improve-card__content">
-                        <h3 class="fs-4 im-improve-card__title">Увеличить разрешение фото</h3>
-                        <div class="u-content im-improve-card__text">
-                          <p>Поднимите разрешение до высокого качества, сохраняя чёткость и резкость</p>
-                        </div>
                       </div>
                     </article>
                   </div>
                 </div>
+                <div class="row im-face__list-row">
+                  <div class="row__col--6 im-face__list-col">
+                    <article class="im-face-card im-face__list-card">
+                      <div class="im-face-card__content">
+                        <h3 class="fs-4 im-face-card__title">Face Swap</h3>
+                        <div class="u-content im-face-card__text">
+                          <p>Вставляйте своё лицо вместо лица знаменитости или персонажа — отличный способ для развлечений или создания уникального контента</p>
+                        </div>
+                        <a href="#" class="btn btn--theme-dark-fill btn--size-md im-face-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Попробовать</span>
+                            <span class="btn__icon btn__icon--dir-rtl">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--6 im-face__list-col">
+                    <article class="im-face-card im-face__list-card">
+                      <div class="im-face-card__media">
+                        <video autoplay muted loop playsinline preload="auto" poster="" class="im-face-card__video">
+                          <source src="static/video/face-2.mp4" type="video/mp4">
+                          <source src="static/video/face-2.webm" type="video/webm">
+                        </video>
+                      </div>
+                    </article>
+                  </div>
+                </div>
               </div>
-              <footer class="im-improve__footer">
-                <a href="#" class="btn btn--theme-accent-fill btn--size-md im-improve__footer-btn">
-                  <span class="btn__inner">
-                    <span class="btn__title">Попробовать</span>
-                    <span class="btn__icon btn__icon--dir-rtl">
-                      <svg class="u-icon">
-                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                      </svg>
-                    </span>
-                  </span>
-                </a>
-              </footer>
             </div>
           </section>
-          <!-- im-improve END -->
+          <!-- im-face END -->
           <!-- im-benefits BEGIN -->
           <section id="benefits" class="im-benefits">
             <picture class="im-benefits__bg">
@@ -156,46 +163,40 @@
             </picture>
             <div class="container container--size-md im-benefits__container">
               <div class="im-benefits__content">
-                <h2 class="im-benefits__title">Assistant&nbsp;AI — <span class="color-accent">лучший выбор</span> для&nbsp;улучшения картинок</h2>
+                <h2 class="im-benefits__title">Assistant&nbsp;AI — <span class="color-accent">идеальный инструмент</span> для замены лиц</h2>
                 <div class="u-content im-benefits__text">
-                  <p>Assistant&nbsp;AI предлагает самые современные решения <br class="d-lg-none">для улучшения картинок</p>
+                  <p>Assistant&nbsp;AI обеспечивает качественную <br class="d-xs-none">и&nbsp;точную замену лица</p>
                 </div>
               </div>
               <div class="im-benefits__improve">
                 <div class="row im-benefits__improve-row">
-                  <div class="row__col--8 im-benefits__improve-col im-benefits__improve-col--hero">
-                    <div class="u-box im-benefits__improve-media">
-                      <picture class="im-benefits__improve-hero">
-                        <!--<source
-                          srcset="images/intro-hero.webp"
-                          type="image/webp">-->
-                        <img
-                          src="images/improve-hero.jpg"
-                          alt="Assistant AI - Превосходная детализация; Автоматизированное улучшение; Поддержка популярных форматов"
-                          width="732"
-                          height="394">
-                      </picture>
-                    </div>
-                  </div>
                   <div class="row__col--4 im-benefits__improve-col im-benefits__improve-col--list">
                     <article class="im-benefits-card im-benefits__improve-card">
-                      <h3 class="fs-4 im-benefits-card__title">Превосходная детализация</h3>
+                      <h3 class="fs-4 im-benefits-card__title">Реалистичная замена</h3>
                       <div class="u-content im-benefits-card__text">
-                        <p>Наши алгоритмы увеличивают разрешение, сохраняя чёткость и&nbsp;естественность картинки</p>
+                        <p>Assistant AI точно подгоняет заменённые лица по форме, освещению и&nbsp;теням, чтобы результат выглядел естественно</p>
                       </div>
                     </article>
                     <article class="im-benefits-card im-benefits__improve-card">
-                      <h3 class="fs-4 im-benefits-card__title">Автоматизированное<br>улучшение</h3>
+                      <h3 class="fs-4 im-benefits-card__title">Автоматизация процесса</h3>
                       <div class="u-content im-benefits-card__text">
-                        <p>ИИ автоматически анализирует изображение и&nbsp;оптимизирует  его качество</p>
+                        <p>Вам не нужно вручную редактировать фото — наш ИИ сделает всё за вас</p>
                       </div>
                     </article>
                     <article class="im-benefits-card im-benefits__improve-card">
-                      <h3 class="fs-4 im-benefits-card__title">Поддержка популярных&nbsp;форматов</h3>
+                      <h3 class="fs-4 im-benefits-card__title">Мгновенные результаты</h3>
                       <div class="u-content im-benefits-card__text">
-                        <p>Работайте с&nbsp;любыми типами картинок и&nbsp;наслаждайтесь результатом</p>
+                        <p>Замена лица занимает считанные секунды,&nbsp;что позволяет быстро получать готовое изображение</p>
                       </div>
                     </article>
+                  </div>
+                  <div class="row__col--8 im-benefits__improve-col im-benefits__improve-col--hero">
+                    <div class="u-box im-benefits__improve-media">
+                      <video autoplay muted loop playsinline preload="auto" poster="" class="im-benefits__improve-hero">
+                        <source src="static/video/face-3.mp4" type="video/mp4">
+                        <source src="static/video/face-3.webm" type="video/webm">
+                      </video>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -220,7 +221,7 @@
               <div class="im-tools__content">
                 <h2 class="im-tools__title">Другие функции для работы с&nbsp;изображениями</h2>
                 <div class="u-content im-tools__text">
-                  <p>Помимо улучшения качества, Assistant&nbsp;AI предлагает широкий выбор инструментов для редактирования и создания изображений</p>
+                  <p>Помимо замены лиц, Assistant&nbsp;AI предлагает целый набор инструментов для&nbsp;редактирования фото и&nbsp;создания уникальных изображений</p>
                 </div>
               </div>
               <div class="row im-tools__list">
@@ -247,6 +248,32 @@
                     </h3>
                     <div class="u-content im-tools-card__text">
                       <p>Создавайте любые изображения в нужном стиле за считанные секунды</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--4 im-tools__list-col">
+                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
+                    <div class="im-tools-card__moore-link">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </div>
+                    <picture class="im-tools-card__picture">
+                      <!--<source
+                        srcset="images/tools-card-1.webp 1x, images/tools-card-1@2x.webp 2x"
+                        type="image/webp">-->
+                      <img
+                        src="images/tools-card-1.png"
+                        srcset="images/tools-card-1.png 1x, images/tools-card-1@2x.png 2x"
+                        width="356"
+                        height="220"
+                        alt="Улучшение качества">
+                    </picture>
+                    <h3 class="fs-4 im-tools-card__title">
+                      <a href="#" class="im-tools-card__link">Улучшение качества</a>
+                    </h3>
+                    <div class="u-content im-tools-card__text">
+                      <p>Повышайте резкость<br>и&nbsp;четкость изображений</p>
                     </div>
                   </article>
                 </div>
@@ -299,32 +326,6 @@
                     </h3>
                     <div class="u-content im-tools-card__text">
                       <p>Создавайте уникальный аватар в&nbsp;нужном стиле</p>
-                    </div>
-                  </article>
-                </div>
-                <div class="row__col--4 im-tools__list-col">
-                  <article class="im-tools-card im-tools-card--theme-gradient im-tools__list-card">
-                    <div class="im-tools-card__moore-link">
-                      <svg class="u-icon">
-                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
-                      </svg>
-                    </div>
-                    <picture class="im-tools-card__picture">
-                      <!--<source
-                        srcset="images/tools-card-13.webp 1x, images/tools-card-13@2x.webp 2x"
-                        type="image/webp">-->
-                      <img
-                        src="images/tools-card-13.png"
-                        srcset="images/tools-card-13.png 1x, images/tools-card-13@2x.png 2x"
-                        width="356"
-                        height="220"
-                        alt="Замена лица">
-                    </picture>
-                    <h3 class="fs-4 im-tools-card__title">
-                      <a href="#" class="im-tools-card__link">Замена лица</a>
-                    </h3>
-                    <div class="u-content im-tools-card__text">
-                      <p>Меняйте лица на фото с&nbsp;высоким уровнем&nbsp;точности и естественности</p>
                     </div>
                   </article>
                 </div>
@@ -479,15 +480,15 @@
             <picture class="im-audiences__bg">
               <img
                 src="images/features-bg.svg"
-                alt="Assistant AI — для всех, кто хочет улучшить свои изображения"
+                alt="Assistant AI — для всех, кто хочет добавить креативности в свои фото"
                 width="1920"
                 height="1162">
             </picture>
             <div class="container container--size-md im-audiences__container">
               <div class="im-audiences__content">
-                <h2 class="im-audiences__title"><span class="color-accent">Assistant&nbsp;AI</span> — для тех, кто хочет улучшить свои изображения</h2>
+                <h2 class="im-audiences__title"><span class="color-accent">Assistant&nbsp;AI</span> — для тех, кто хочет добавить креативности в свои фото</h2>
                 <div class="u-content im-audiences__text">
-                  <p>Фотографы, дизайнеры, маркетологи и просто любители — вы найдёте здесь всё, что нужно для создания ярких визуальных решений</p>
+                  <p>Блогеры, дизайнеры, фотографы и просто любители — вы найдёте здесь всё,&nbsp;что нужно для создания ярких визуальных решений</p>
                 </div>
               </div>
               <div class="row im-audiences__list">

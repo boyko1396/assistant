@@ -1061,3 +1061,57 @@
     color: $greyDescColor;
   }
 }
+
+.im-face-card {
+  background: linear-gradient(97.84deg, rgba($whiteColor, .55) 0%, rgba($whiteColor, .2) 100%);
+  box-shadow: $boxShadowBLack2;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  padding: 24rem;
+  color: $whiteColor;
+  border-radius: $radiusExs;
+  box-shadow: inset 0 0 0 1px rgba($whiteColor, .18);
+  position: relative;
+  overflow: hidden;
+  @media (max-width: $sm) {
+    padding: 12rem;
+  }
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__title {
+    margin: 0 0 4rem;
+  }
+  &__text {
+    margin: 0 0 36rem;
+    font-weight: normal !important;
+    line-height: $lineHeight1;
+    color: #F0F0F0;
+    @media (max-width: $sm) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__btn {
+  }
+  &__media {
+    background: $whiteColor;
+    height: 100%;
+    padding-bottom: 49.0566037736%;
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+  }
+  &__video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
