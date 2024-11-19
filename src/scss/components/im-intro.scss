@@ -6,6 +6,8 @@
   }
   &__bg {
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
     position: absolute;
     bottom: -30rem;
     right: -20rem;

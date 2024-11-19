@@ -60,6 +60,14 @@
       margin: 0 0 24rem;
     }
     &.--mx {
+      &-md {
+        margin-right: -40rem;
+        margin-left: -40rem;
+        @media (max-width: $sm) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
       &-lg {
         margin-right: -82rem;
         margin-left: -82rem;

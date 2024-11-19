@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20241118172745">
+  <link rel="stylesheet" href="css/style.min.css??=v=20241119140139">
   <link rel="icon" type="image/png" href="/static/favicon/favicon-48x48.png" sizes="48x48">
   <link rel="icon" type="image/svg+xml" href="/static/favicon/favicon.svg">
   <link rel="shortcut icon" href="/static/favicon/favicon.ico">
@@ -143,8 +143,7 @@
           
           <section id="features" class="im-face">
             <picture class="im-face__bg">
-              <source srcset="images/face-bg.webp" type="image/webp">
-              <img src="images/face-bg.jpg" width="1920" height="1280" alt="Заменяйте лица на фото с помощью искусственного интеллекта">
+              <img src="images/face-bg.svg" width="1920" height="1280" alt="Заменяйте лица на фото с помощью искусственного интеллекта">
             </picture>
             <div class="container container--size-md im-face__container">
               <div class="im-face__content">
@@ -156,7 +155,7 @@
               <div class="im-face__list">
                 <div class="row im-face__list-row">
                   <div class="im-face__list-col row__col--6">
-                    <article class="im-face-card im-face__list-card">
+                    <article class="im-face-card im-face-card--radius-sm im-face__list-card">
                       <div class="im-face-card__content">
                         <h3 class="fs-4 im-face-card__title">Заменить лицо</h3>
                         <div class="u-content im-face-card__text">
@@ -164,7 +163,7 @@
                         </div>
                         <a href="#" class="btn btn--size-md btn--theme-dark-fill im-face-card__btn">
                           <span class="btn__inner">
-                            <span class="btn__title">Попробовать</span>
+                            <span class="btn__title">Заменить лицо</span>
                             <span class="btn__icon btn__icon--dir-rtl">
                               <svg class="u-icon">
                                 <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
@@ -176,7 +175,7 @@
                     </article>
                   </div>
                   <div class="im-face__list-col row__col--6">
-                    <article class="im-face-card im-face__list-card">
+                    <article class="im-face-card im-face-card--radius-sm im-face__list-card">
                       <div class="im-face-card__media">
                         <video autoplay muted loop playsinline preload="auto" poster="" class="im-face-card__video">
                           <source src="static/video/face-1.mp4" type="video/mp4">
@@ -188,7 +187,7 @@
                 </div>
                 <div class="row im-face__list-row">
                   <div class="im-face__list-col row__col--6">
-                    <article class="im-face-card im-face__list-card">
+                    <article class="im-face-card im-face-card--radius-sm im-face__list-card">
                       <div class="im-face-card__content">
                         <h3 class="fs-4 im-face-card__title">Face Swap</h3>
                         <div class="u-content im-face-card__text">
@@ -196,7 +195,7 @@
                         </div>
                         <a href="#" class="btn btn--size-md btn--theme-dark-fill im-face-card__btn">
                           <span class="btn__inner">
-                            <span class="btn__title">Попробовать</span>
+                            <span class="btn__title">Заменить фон</span>
                             <span class="btn__icon btn__icon--dir-rtl">
                               <svg class="u-icon">
                                 <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
@@ -208,7 +207,7 @@
                     </article>
                   </div>
                   <div class="im-face__list-col row__col--6">
-                    <article class="im-face-card im-face__list-card">
+                    <article class="im-face-card im-face-card--radius-sm im-face__list-card">
                       <div class="im-face-card__media">
                         <video autoplay muted loop playsinline preload="auto" poster="" class="im-face-card__video">
                           <source src="static/video/face-2.mp4" type="video/mp4">
@@ -485,8 +484,8 @@
             </picture>
             <div class="container container--size-md im-audiences__container">
               <div class="im-audiences__content">
-                <h2 class="im-audiences__title"><span class="color-accent">Assistant&nbsp;AI</span> — для тех, кто хочет добавить креативности в свои фото</h2>
-                <div class="u-content im-audiences__text">
+                <h2 class="--mx-md im-audiences__title"><span class="color-accent">Assistant&nbsp;AI</span> — для тех, кто хочет добавить креативности в свои фото</h2>
+                <div class="u-content --mx-md im-audiences__text">
                   <p>Блогеры, дизайнеры, фотографы и просто любители — вы найдёте здесь всё,&nbsp;что нужно для создания ярких визуальных решений</p>
                 </div>
               </div>
@@ -593,7 +592,8 @@
       </div>
     </div>
     <picture class="im-reviews__circle">
-      <img src="images/reviews-circle.svg" width="300" height="300" alt="Пользователи выбирают нас">
+      <source srcset="images/reviews-circle.webp, images/reviews-circle@2x.webp 2x" type="image/webp">
+      <img src="images/reviews-circle.png" srcset="images/reviews-circle.png, images/reviews-circle@2x.png 2x" width="300" height="300" alt="Пользователи выбирают нас">
     </picture>
     <div class="im-reviews__slider js-im-reviews-slider-init swiper">
       <div class="swiper-wrapper">
@@ -1032,7 +1032,7 @@
         
         <footer class="footer site__footer">
   <picture class="footer__assistant-ai-text">
-    <img src="images/assistant-ai-text.svg" width="1172" height="154" alt="Optimal AI">
+    <img src="images/assistant-ai-text.svg" width="1172" height="154" alt="Assistant AI.">
   </picture>
   <div class="container container--size-md footer__container">
     <div class="row footer__row">
@@ -1069,13 +1069,13 @@
         </a>
       </div>
     </div>
-    <p class="footer__copyright">© 2024 Optimal AI. &nbsp;<br class="d-md-none">Все права защищены</p>
+    <p class="footer__copyright">© 2024 Assistant AI.. &nbsp;<br class="d-md-none">Все права защищены</p>
   </div>
 </footer>
         
       </div>
     </div>
 
-    <script src="js/app.min.js??=v=20241118172745"></script>
+    <script src="js/app.min.js??=v=20241119140139"></script>
   </body>
 </html>

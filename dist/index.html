@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20241118172745">
+  <link rel="stylesheet" href="css/style.min.css??=v=20241119140139">
   <link rel="icon" type="image/png" href="/static/favicon/favicon-48x48.png" sizes="48x48">
   <link rel="icon" type="image/svg+xml" href="/static/favicon/favicon.svg">
   <link rel="shortcut icon" href="/static/favicon/favicon.ico">
@@ -89,9 +89,7 @@
           
           <section id="intro" class="im-intro">
             <picture class="d-lg-none im-intro__bg">
-              <source srcset="images/intro-bg-767.webp" type="image/webp" media="(max-width: 767px)">
               <source srcset="images/intro-bg-767.png" media="(max-width: 767px)">
-              <source srcset="images/intro-bg.webp" type="image/webp">
               <img src="images/intro-bg.png" width="1936" height="789">
             </picture>
             <div class="container container--size-md im-intro__container">
@@ -139,7 +137,7 @@
           </section>
           
           
-          <section id="possibilities" class="im-possibilities">
+          <section id="features" class="im-possibilities">
             <div class="container container--size-md im-possibilities__container">
               <div class="im-possibilities__content">
                 <h2 class="im-possibilities__title">Ваши идеи — новая реальность</h2>
@@ -318,7 +316,7 @@
           </section>
           
           
-          <section id="features" class="im-features">
+          <section class="im-features">
             <picture class="im-features__bg">
               <img src="images/features-bg.svg" alt="Почему выбирают Assistant AI?" width="1920" height="1162">
             </picture>
@@ -676,7 +674,8 @@
       </div>
     </div>
     <picture class="im-reviews__circle">
-      <img src="images/reviews-circle.svg" width="300" height="300" alt="Пользователи выбирают нас">
+      <source srcset="images/reviews-circle.webp, images/reviews-circle@2x.webp 2x" type="image/webp">
+      <img src="images/reviews-circle.png" srcset="images/reviews-circle.png, images/reviews-circle@2x.png 2x" width="300" height="300" alt="Пользователи выбирают нас">
     </picture>
     <div class="swiper im-reviews__slider js-im-reviews-slider-init">
       <div class="swiper-wrapper">
@@ -1115,7 +1114,7 @@
         
         <footer class="footer site__footer">
   <picture class="footer__assistant-ai-text">
-    <img src="images/assistant-ai-text.svg" width="1172" height="154" alt="Optimal AI">
+    <img src="images/assistant-ai-text.svg" width="1172" height="154" alt="Assistant AI.">
   </picture>
   <div class="container container--size-md footer__container">
     <div class="row footer__row">
@@ -1152,13 +1151,13 @@
         </a>
       </div>
     </div>
-    <p class="footer__copyright">© 2024 Optimal AI. &nbsp;<br class="d-md-none">Все права защищены</p>
+    <p class="footer__copyright">© 2024 Assistant AI.. &nbsp;<br class="d-md-none">Все права защищены</p>
   </div>
 </footer>
         
       </div>
     </div>
 
-    <script src="js/app.min.js??=v=20241118172745"></script>
+    <script src="js/app.min.js??=v=20241119140139"></script>
   </body>
 </html>

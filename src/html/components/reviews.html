@@ -7,7 +7,15 @@
       </div>
     </div>
     <picture class="im-reviews__circle">
-      <img src="images/reviews-circle.svg" width="300" height="300" alt="Пользователи выбирают нас">
+      <source
+        srcset="images/reviews-circle.webp 1x, images/reviews-circle@2x.webp 2x"
+        type="image/webp">
+      <img
+        src="images/reviews-circle.png"
+        srcset="images/reviews-circle.png 1x, images/reviews-circle@2x.png 2x"
+        width="300"
+        height="300"
+        alt="Пользователи выбирают нас">
     </picture>
     <div class="js-im-reviews-slider-init swiper im-reviews__slider">
       <div class="swiper-wrapper">

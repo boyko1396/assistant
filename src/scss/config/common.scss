@@ -158,7 +158,10 @@
       --btn-height: 46rem;
       --btn-padding-x: 23rem;
       --btn-padding-y: 8rem;
-      --btn-font-size: var(--fs-6);
+      --btn-font-size: var(--fs-default);
+      @media (max-width: $sm) {
+        --btn-height: 44rem;
+      }
     }
   }
   &__inner {
@@ -174,10 +177,10 @@
     position: relative;
     &--dir {
       &-ltr {
-        margin-right: calc(var(--gap) - 4rem);
+        margin-right: 6rem;
       }
       &-rtl {
-        margin-left: calc(var(--gap) - 4rem);
+        margin-left: 6rem;
       }
     }
     .u-icon,
@@ -1014,6 +1017,12 @@
   border-radius: $radiusExs;
   @media (max-width: $sm) {
   }
+  &--padding {
+    &-fixed {
+      padding: 24rem;
+      border-radius: $radiusSm;
+    }
+  }
   &__picture {
     @extend %img-cover;
     width: 80rem;
@@ -1106,6 +1115,17 @@
   @media (max-width: $sm) {
     padding: 12rem;
   }
+  &--radius {
+    &-sm {
+      border-radius: $radiusExs;
+    }
+  }
+  &--padding {
+    &-fixed {
+      padding: 24rem;
+      border-radius: $radiusSm;
+    }
+  }
   &--media {
     padding: 0;
   }
@@ -1164,6 +1184,8 @@
   background: linear-gradient(97.84deg, rgba($whiteColor, .55) 0%, rgba($whiteColor, .2) 100%);
   backdrop-filter: blur(10px);
   padding: 24rem;
+  display: flex;
+  flex-direction: column;
   border-radius: 24px;
   border: none;
   box-shadow: 0 5px 20px rgba($blackColor, .1);
@@ -1172,9 +1194,9 @@
     padding-left: var(--gap-fluid);
   }
   &__picture {
+    width: 100%;
     max-width: 332rem;
-    margin: 0 auto 36rem;
-    position: relative;
+    margin: auto;
     @media (max-width: $sm) {
     }
     img {
@@ -1184,6 +1206,8 @@
     }
   }
   &__content {
+    width: 100%;
+    padding-top: 36rem;
     @media (max-width: $sm) {
     }
   }

@@ -5,7 +5,7 @@ export default class ComparisonSlider {
     if (!this.container) return;
 
     this.sliderButton = this.container.querySelector('.js-comparison-img-btn');
-    this.imageBefore = this.sliderButton.nextElementSibling;
+    this.imageBefore = this.container.querySelector('.js-comparison-img-before');
 
     this.sliderButtonWidth = this.sliderButton.getBoundingClientRect().width;
     this.imageBeforeWidth = this.imageBefore.getBoundingClientRect().width;
